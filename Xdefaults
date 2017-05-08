@@ -1,0 +1,86 @@
+###################################################################################################################
+##################################################  Fonts  ########################################################
+
+URxvt*font:				xft:iosevka:pixelsize=12, style=regular
+URxvt*boldFont:			xft:iosevka:pixelsize=12, style=regular
+
+URxvt*allow_bold:		true
+
+
+###################################################################################################################
+##################################################  Colors  #######################################################
+
+! special
+URxvt*foreground    : #f2f2f2
+URxvt*background    : #1e1e1e
+
+
+! black
+*color0  			: #263238
+*color8  			: #37474f
+! red
+*color1  			: #ff9800
+*color9  			: #ffa74d
+! green
+*color2  			: #8bc34a
+*color10 			: #9ccc65
+! yellow
+*color3  			: #ffc107
+*color11 			: #ffa000
+! blue
+*color4  			: #03a9f4
+*color12 			: #81d4fa
+! magenta
+*color5  			: #e91e63
+*color13 			: #ad1457
+! cyan
+*color6  			: #009688
+*color14 			: #26a69a
+! white
+*color7  			: #cfd8dc
+*color15 			: #eceff1
+
+
+###################################################################################################################
+###########################################  Enable link support  #################################################
+
+URxvt.perl-ext-common:			default,matcher,tabbedex,vtwheel,clipboard
+!URxvt.matcher.button:			1
+URxvt.perl-ext:				default,url-select
+URxvt.keysym.M-u:			perl:url-select:select_next
+URxvt.url-select.launcher:		/usr/bin/google-chrome
+URxvt.url-select.underline:		true
+
+
+###################################################################################################################
+###############################################  Disable bell  ####################################################
+
+URxvt.insecure: 			false
+
+
+###################################################################################################################
+###########################################  Scrollbar / cursor  ##################################################
+
+URxvt*saveLines: 			300000
+URxvt.scrollBar: 			false
+!URxvt*scrollstyle:			plain
+URxvt*cursorBlink: 			false
+URxvt*cursorUnderline: 		        true
+URxvt*cursorColor: 			#51c4d4
+
+
+###################################################################################################################
+##################################################  Tabs  #########################################################
+
+URxvt.tabbedex.autohide:		yes
+URxvt.tabbedex.tabbar-fg:		2
+URxvt.tabbedex.tabbar-bg:		0
+URxvt.tabbedex.tab-fg:			10
+URxvt.tabbedex.tab-bg:			0
+URxvt.tabbedex.title:			yes
+URxvt.tabbedex.new-button:		no
+
+###################################################################################################################
+#################################################  Geometry  ######################################################
+
+URxvt.geometry: 80x20+50+74
